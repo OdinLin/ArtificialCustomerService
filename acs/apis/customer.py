@@ -8,6 +8,7 @@ from flask_restful import Resource, fields, marshal
 from acs.rongcloud import RongCloud
 from acs.models import CustomerService, AimiChatLogs, Product, RobotSettings
 from acs.ext import redis_store
+import time
 
 
 
@@ -141,7 +142,15 @@ class CustomerLogin(Resource):
             chat_log = AimiChatLogs.query.filter_by(dialog_id=uuid,service_user_id=None).order_by(AimiChatLogs.update_time,AimiChatLogs.role.desc()).all()
             chat_list = []
             for chat in chat_log:
-                chat_list.append(chat.content)
+                if chat.role == 'robot':
+                    flag = 1
+                elif chat.role == 'customer':
+                    flag = 2
+                else:
+                    flag = 2
+                chat_time = int(time.mktime(chat.create_time.timetuple()) * 1000)
+                chat_list.append({'content': chat.content, 'sentTime': chat_time, 'messageDirection': flag})
+
             data['extra'] = [robot_code, product_name, chat_list, customer_name, product_id]
         except Exception as e:
             current_app.logger.error(e)
