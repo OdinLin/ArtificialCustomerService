@@ -19,13 +19,11 @@ celery_app = Celery("tasks", broker=broker_url)
 
 @celery_app.task
 def rong_send_message(userid, service_id):
-    time.sleep(5)
-    start_time = redis_store.get(userid + '0' + 'customer')
-    end_time = redis_store.get(userid + '1' + 'customer')
-    if not all([start_time, end_time]):
+    time.sleep(1)
+    refresh_flag = redis_store.get(userid + 'refresh').decode()
+    if refresh_flag == '1':
+        redis_store.delete(userid + 'refresh')
         return 'not send'
-    if start_time > end_time:
-        return 'refresh not send'
     app_key = 'z3v5yqkbz1h60'
     app_secret = 'QASsvdjF7j'
     rcloud = RongCloud(app_key, app_secret)
@@ -33,11 +31,9 @@ def rong_send_message(userid, service_id):
         fromUserId=userid,
         toUserId=service_id,
         objectName='RC:TxtMsg',
-        content=json.dumps({"content": "关闭客户会话,RongIMClient.getInstance().logout()", "extra": "helloExtra"}),
+        content=json.dumps({"content": "592b71f0-b3f8-4f64-bd45-40b35c0191af", "extra": "helloExtra"}),
         isPersisted='1',
         isCounted='1', )
-    redis_store.delete(userid + '0' + 'customer')
-    redis_store.delete(userid + '1' + 'customer')
     return 'send_success'
 
 
@@ -82,7 +78,7 @@ def test():
 
 # celery -A acs.tasks worker --loglevel=info -P eventlet
 
-# celery -A acs.tasks.celery_app worker --loglevel=info
+# celery -A acs.tasks.celery_app worker --loglevel=info    选择这个!
 # celery -A acs --app=acs.tasks:celery_app worker --loglevel=info
 
 if __name__ == '__main__':
