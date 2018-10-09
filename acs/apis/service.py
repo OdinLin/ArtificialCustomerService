@@ -86,7 +86,7 @@ class MessageRoute(Resource):
         msgTimestamp = message.get('msgTimestamp', None)
         msgUID = message.get('msgUID', None)
         chat_content = content['content']
-        if chat_content == '关闭客户会话,RongIMClient.getInstance().logout()':
+        if chat_content == '592b71f0-b3f8-4f64-bd45-40b35c0191af':
             return 'success'
         try:
             customer_name= content['extra'][3]
@@ -166,40 +166,39 @@ class ServiceOnlineStatus(Resource):
                 state = last_message.get('status')
                 userid = last_message.get('userid')
                 redis_status = 'status' + last_message.get('userid')
-                time = last_message.get('time')
                 service_id = redis_store.get(redis_status).decode()
                 from_id = CustomerService.query.filter_by(service_id=service_id, is_delete=0).first()
                 redis_robot_service = 'service' + str(from_id.robot_user_id)
                 if (len(all_message) == 1) and (state == '1' or state == '2'):
                     redis_store.hincrby(redis_robot_service, service_id, amount=-1)
-                    redis_store.set(userid + '1' + 'customer', time)
-                    # app_key = 'z3v5yqkbz1h60'
-                    # app_secret = 'QASsvdjF7j'
-                    # rcloud = RongCloud(app_key, app_secret)
-                    # r = rcloud.Message.publishPrivate(
-                    #     fromUserId=last_message.get('userid'),
-                    #     toUserId=service_id,
-                    #     objectName='RC:TxtMsg',
-                    #     content=json.dumps({"content": "关闭客户会话,RongIMClient.getInstance().logout()", "extra": "helloExtra"}),
-                    #     isPersisted='1',
-                    #     isCounted='1', )
                     rong_send_message.delay(userid, service_id)
                     redis_store.delete(redis_status)
                 elif (len(all_message) > 1) and (state == '1' or state == '2'):
                     redis_store.hincrby(redis_robot_service, service_id, amount=-1)
-                elif state == '0':
-                    redis_store.set(userid+state + 'customer', time)
+                    redis_store.delete(userid + 'refresh')
                 if int(redis_store.hget(redis_robot_service, service_id).decode()) < 0:
                     redis_store.hset(redis_robot_service, service_id, 0)
             return 'success'
         except:
             return 'fail'
 
-    def get(self):
-        service_id = 'c81e728d9d4c2f636f067f89cc14862c'
-        service_change_state.delay(service_id)
-        print('hello')
-        return 'success'
+
+
+    def put(self):
+        usermessage = request.form
+        uuid = usermessage.get('uuid', None)
+        if not uuid:
+            result = {
+                "status": "200",
+                "msg": "无uuid",
+            }
+            return result
+        redis_store.setex(uuid + 'refresh', 60, 1)
+        result = {
+            "status": "200",
+            "msg": "success",
+        }
+        return result
 
 
 
