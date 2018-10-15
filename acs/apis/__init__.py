@@ -37,6 +37,7 @@ api.add_resource(ServiceOnlineStatus,'/acs/v1.0/service_online_status') # 在线
 
 
 
+
 # 客服历史对话页面
 api.add_resource(RobotNumber,'/acs/v1.0/robot_number')  # get请求,机器人编号
 api.add_resource(ServiceNumber,'/acs/v1.0/service_number') # get请求,客服名

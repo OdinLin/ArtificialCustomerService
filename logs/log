@@ -27738,3 +27738,1145 @@ DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.js
 DEBUG base.py:62 Response[200]: OK, Duration: 0.115070s.
 DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
 DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 16:36:50] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 16:39:42] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 16:44:14] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 16:49:18] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 16:49:21] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 16:50:16] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 16:50:20] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 16:51:36] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 16:53:55] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 16:57:34] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.47143773996056215', 'rc-timestamp': '1538214818000', 'rc-signature': 'ba0c1a889eb582d82a94e7931a493c25177185e8', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'f899139df5e1059396431415e770c6dd', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.114081s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 18:13:11] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 18:14:00] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 18:19:46] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 18:21:12] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.2.103 - - [29/Sep/2018 18:34:51] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:06:19] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:06:19] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:06:27] "GET /acs/v1.0/customer_solve HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on /acs/v1.0/customer_solve [GET]
+Traceback (most recent call last):
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 484, in wrapper
+    return self.make_response(data, code, headers=headers)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 513, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+  File "e:\python\python\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "e:\python\python\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "e:\python\python\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "e:\python\python\Lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AimiChatLogs' is not JSON serializable
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:07:34] "GET /acs/v1.0/customer_solve HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on /acs/v1.0/customer_solve [GET]
+Traceback (most recent call last):
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 484, in wrapper
+    return self.make_response(data, code, headers=headers)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 513, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+  File "e:\python\python\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "e:\python\python\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "e:\python\python\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "e:\python\python\Lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'datetime' is not JSON serializable
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:09:08] "GET /acs/v1.0/customer_solve HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /acs/v1.0/customer_solve [GET]
+Traceback (most recent call last):
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 484, in wrapper
+    return self.make_response(data, code, headers=headers)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 513, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\representations\json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+  File "e:\python\python\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "e:\python\python\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "e:\python\python\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "e:\python\python\Lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'datetime' is not JSON serializable
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:09:09] "GET /acs/v1.0/customer_solve HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:10:16] "GET /acs/v1.0/customer_solve HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:10:53] "GET /acs/v1.0/customer_solve HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:20:02] "GET /acs/v1.0/customer_solve HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:25:53] "GET /acs/v1.0/customer_solve HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:27:05] "GET /acs/v1.0/customer_solve HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on /acs/v1.0/customer_solve [GET]
+Traceback (most recent call last):
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\company\ACS\acs\apis\customer.py", line 306, in get
+    print(chat_log.create_time)
+AttributeError: 'NoneType' object has no attribute 'create_time'
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:41:49] "GET /acs/v1.0/customer_solve HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /acs/v1.0/customer_solve [GET]
+Traceback (most recent call last):
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\company\ACS\acs\apis\customer.py", line 306, in get
+    print(chat_log.create_time)
+AttributeError: 'NoneType' object has no attribute 'create_time'
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:42:00] "GET /acs/v1.0/customer_solve HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:42:09] "GET /acs/v1.0/customer_solve HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:55:57] "POST /acs/v1.0/customer_login HTTP/1.1" 200 -
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.10098758880821912', 'rc-timestamp': '1538967366000', 'rc-signature': 'e1ce6dfdfc32d7f609b280a4601e28868897046c', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': '11111111111111111', 'name': '11111111111111111', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 160
+DEBUG base.py:62 Response[200]: OK, Duration: 0.139630s.
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:56:06] "POST /acs/v1.0/customer_login HTTP/1.1" 200 -
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.3592277259509842', 'rc-timestamp': '1538967393000', 'rc-signature': 'c926b7e871048829838654660c25d4595210783d', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': '111111', 'name': '11111111111111111', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 129
+DEBUG base.py:62 Response[200]: OK, Duration: 0.134644s.
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:56:34] "POST /acs/v1.0/customer_login HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.09841618300172206', 'rc-timestamp': '1538967412000', 'rc-signature': 'db945f2399fb39e5a96c758dd0ab16b297eb9dee', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': '111111', 'name': '11111111111111111', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 129
+DEBUG base.py:62 Response[200]: OK, Duration: 0.104061s.
+ERROR customer.py:156 'list' object has no attribute 'create_time'
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:56:52] "POST /acs/v1.0/customer_login HTTP/1.1" 200 -
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.8837165531111555', 'rc-timestamp': '1538967417000', 'rc-signature': '540b7dd877ab10fca3f3a973f2d6a66423cea3be', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': '111111', 'name': '11111111111111111', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 129
+DEBUG base.py:62 Response[200]: OK, Duration: 0.88764s.
+ERROR customer.py:156 'list' object has no attribute 'create_time'
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:56:57] "POST /acs/v1.0/customer_login HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.5098662939576999', 'rc-timestamp': '1538967505000', 'rc-signature': '56343bbb0295a10c900dfee106219844ba897195', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': '111111', 'name': '11111111111111111', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 129
+DEBUG base.py:62 Response[200]: OK, Duration: 0.103730s.
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 10:58:25] "POST /acs/v1.0/customer_login HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.8720708191909363', 'rc-timestamp': '1538967902000', 'rc-signature': '69217d89618c3481d08096d4a337283e2248a4b9', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': '111111', 'name': '11111111111111111', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 129
+DEBUG base.py:62 Response[200]: OK, Duration: 0.158847s.
+INFO _internal.py:88 127.0.0.1 - - [08/Oct/2018 11:05:02] "POST /acs/v1.0/customer_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 11:11:15] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 11:21:21] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 11:30:58] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 11:45:50] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 11:47:35] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 11:51:05] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 12:00:30] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 13:48:18] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 13:48:26] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 13:48:32] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 13:49:03] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 13:49:06] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 13:49:09] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 13:49:42] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 13:54:42] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 13:55:38] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 14:05:15] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 14:07:16] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [08/Oct/2018 14:33:50] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 14:35:34] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 14:58:46] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 14:58:46] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 14:58:46] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 15:01:24] "GET /acs/v1.0/record_dialogs?role=&start_data=2018-10-10+00:00:00&end_data=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 15:01:25] "GET /acs/v1.0/record_dialogs?role=&start_data=2018-10-10+00:00:00&end_data=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 15:01:25] "GET /acs/v1.0/record_dialogs?role=&start_data=2018-10-10+00:00:00&end_data=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 15:01:26] "GET /acs/v1.0/record_dialogs?role=&start_data=2018-10-10+00:00:00&end_data=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 15:01:26] "GET /acs/v1.0/record_dialogs?role=&start_data=2018-10-10+00:00:00&end_data=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 15:01:26] "GET /acs/v1.0/record_dialogs?role=&start_data=2018-10-10+00:00:00&end_data=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [08/Oct/2018 16:22:35] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [08/Oct/2018 16:23:09] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:27:40] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:27:40] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:27:40] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:29:42] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:29:42] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:29:42] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:30:02] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:33:33] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:33:33] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:33:33] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:33:51] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-07+16:33:35&end_date=2018-10-08+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:33:51] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-07+16:33:35&end_date=2018-10-08+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:33:52] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-07+16:33:35&end_date=2018-10-08+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:33:52] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-07+16:33:35&end_date=2018-10-08+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:33:52] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-07+16:33:35&end_date=2018-10-08+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:33:52] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-07+16:33:35&end_date=2018-10-08+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:08] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-08+16:34:07&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:08] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-08+16:34:07&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:09] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-08+16:34:07&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:09] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-08+16:34:07&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:09] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-08+16:34:07&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:11] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-08+16:34:07&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:20] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:20] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:20] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:28] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:29] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:29] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:30] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:30] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:31] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:47] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:48] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:49] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:50] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:50] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:50] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:51] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:51] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:52] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:54] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:55] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:56] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:34:57] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-23+00:00:00&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:40:37] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:40:37] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:40:37] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:40:39] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:40:44] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-08+16:40:43&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:40:44] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-08+16:40:43&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:40:45] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-08+16:40:43&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:40:45] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-08+00:00:00&end_date=2018-10-08+16:40:43&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:45:21] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-31+00:00:00&end_date=2018-10-08+16:45:20&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:45:22] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-31+00:00:00&end_date=2018-10-08+16:45:20&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:45:22] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-31+00:00:00&end_date=2018-10-08+16:45:20&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:45:22] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-31+00:00:00&end_date=2018-10-08+16:45:20&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:45:23] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-31+00:00:00&end_date=2018-10-08+16:45:20&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:45:23] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-31+00:00:00&end_date=2018-10-08+16:45:20&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [08/Oct/2018 16:45:24] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-31+00:00:00&end_date=2018-10-08+16:45:20&p=&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:13:44] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:13:44] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:13:51] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:13:56] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:14:02] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:14:02] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:14:02] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:14:15] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+00:00:00&end_date=2018-10-09+00:00:00&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:14:32] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+09:14:32&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:14:41] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+00:00:00&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:14:56] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:21:12] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:21:48] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:21:50] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:22:19] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:33:45] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:37:40] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:43:01] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:43:50] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:46:29] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 09:56:31] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 10:05:33] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 10:05:33] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 10:05:33] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 10:21:12] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 10:29:46] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:36:45] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:36:45] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:36:45] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:12] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:12] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:12] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:23] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+11:39:23&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:26] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+11:39:23&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:26] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+11:39:23&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:27] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+11:39:23&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:27] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+11:39:23&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:28] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+11:39:23&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:28] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+11:39:23&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:28] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+11:39:23&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:29] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-01+00:00:00&end_date=2018-10-09+11:39:23&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:43] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:43] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:43] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:39:52] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+00:00:00&end_date=2018-10-09+11:39:50&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:40:59] "GET /acs/v1.0/record_excel?robot_code=&role=&start_date=&end_date=&product_id= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:01] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:10] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+00:00:00&end_date=2018-10-09+00:00:00&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:26] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:26] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:26] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:32] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+11:41:30&end_date=2018-10-09+11:41:32&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:33] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+11:41:30&end_date=2018-10-09+11:41:32&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:33] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+11:41:30&end_date=2018-10-09+11:41:32&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:33] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+11:41:30&end_date=2018-10-09+11:41:32&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:34] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+11:41:30&end_date=2018-10-09+11:41:32&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:41:34] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+11:41:30&end_date=2018-10-09+11:41:32&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:42:24] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+11:41:30&end_date=2018-10-09+11:41:32&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:42:37] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+11:41:30&end_date=2018-10-09+11:41:32&p=1&robot_code=001 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:42:50] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:42:50] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:42:50] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:42:56] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+00:00:00&end_date=2018-10-09+00:00:00&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:43:06] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:43:21] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:43:21] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:43:21] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:44:54] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:45:08] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-09-11+00:00:00&end_date=2018-10-09+00:00:00&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:46:01] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:46:10] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+00:00:00&end_date=2018-10-09+00:00:00&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:46:22] "GET /acs/v1.0/record_dialogs?role=&start_date=2018-10-09+00:00:00&end_date=2018-10-09+00:00:00&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:46:26] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:52:50] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:52:50] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 11:52:50] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 13:58:24] "OPTIONS /acs/vl.0/service_online_status HTTP/1.1" 404 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 13:58:50] "GET /acs/vl.0/service_online_status HTTP/1.1" 404 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 13:58:50] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:01:50] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:02:46] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:04:40] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:04:51] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:15:01] "OPTIONS /acs/vl.0/service_online_status HTTP/1.1" 404 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:15:20] "OPTIONS /acs/vl.0/service_online_status HTTP/1.1" 404 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:15:26] "GET /acs/vl.0/service_online_status HTTP/1.1" 404 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:15:44] "GET /acs/vl.0/service_online_status HTTP/1.1" 404 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:15:45] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:16:06] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:16:49] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:16:49] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:17:03] "GET /acs/v1.0/service_online_status HTTP/1.1" 405 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:31:26] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:31:26] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:38:40] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:38:43] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:38:44] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:41:14] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:41:14] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:43:35] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:43:51] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:45:25] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:45:34] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:45:39] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:45:41] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:45:47] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:45:54] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:46:22] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:46:22] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:47:40] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:47:40] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:47:47] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:48:27] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:49:56] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:50:01] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:50:05] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:51:20] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:51:20] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:53:00] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:54:25] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:54:25] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:56:46] "OPTIONS /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 14:56:46] "PUT /acs/v1.0/service_online_status HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:59:33] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:59:34] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 14:59:47] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:03:05] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:09:22] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:14:37] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:16:49] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:27:23] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:28:52] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:32:14] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:32:54] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:33:46] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:35:33] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:36:10] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:36:41] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:39:19] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:42:20] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:46:11] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:53:33] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 15:58:23] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 16:00:34] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 16:03:27] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 16:56:38] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+ERROR app.py:1761 Exception on /acs/v1.0/service_history_message [GET]
+Traceback (most recent call last):
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\company\ACS\acs\utils\commons.py", line 21, in wrapper
+    return view_func(*args, **kwargs)
+  File "D:\company\ACS\acs\apis\service.py", line 212, in get
+    logs = AimiChatLogs.query.filter(AimiChatLogs.service_user_id == user_id, AimiChatLogs.dialog_id == dialog_id).all()\
+AttributeError: 'list' object has no attribute 'order_by'
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 16:57:29] "GET /acs/v1.0/service_history_message?uuid=111111 HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 16:58:43] "GET /acs/v1.0/service_history_message?uuid=111111 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 16:59:15] "GET /acs/v1.0/service_history_message?targetId=111111 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:00:03] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:04:33] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:04:57] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:05:09] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:05:24] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:05:31] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:05:50] "GET /acs/v1.0/service_history_message?targetId=zaqwsx HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:07:46] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:07:57] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:10:35] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:20:12] "GET /acs/v1.0/service_online_status?targetId=zaqwsx HTTP/1.1" 405 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:20:30] "GET /acs/v1.0/service_online_status?targetId=zaqwsx HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:23:53] "GET /acs/v1.0/service_online_status?targetId=zaqwsx HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:24:34] "GET /acs/v1.0/service_online_status?targetId=zaqwsx HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:24:52] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:12] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:14] "DELETE /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 405 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:14] "DELETE /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 405 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:16] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:18] "DELETE /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 405 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:18] "DELETE /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 405 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:21] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:23] "DELETE /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 405 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:23] "DELETE /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 405 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:48] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:51] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:53] "GET /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:25:53] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:26:07] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:26:09] "GET /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:26:09] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:26:27] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:26:35] "GET /acs/v1.0/service_online_status?targetId=111111 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:26:42] "GET /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:26:42] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:26:49] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:26:56] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:27:04] "GET /acs/v1.0/service_online_status?targetId=111111 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:30:53] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:31:23] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:32:42] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:34:30] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:35:56] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:38:29] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:39:41] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:39:56] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:40:00] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [09/Oct/2018 17:41:08] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:42:10] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:42:15] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:42:56] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:42:58] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:42:58] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:43:00] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:43:18] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:43:20] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:46:58] "GET /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:46:58] "GET /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:46:58] "GET /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:46:59] "GET /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:47:30] "GET /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:47:48] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:47:49] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:50:19] "GET /acs/v1.0/service_online_status?targetId=854d9e12aedd04df5f4ca6c2b6c8d0ec HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:50:19] "GET /acs/v1.0/service_online_status?targetId=854d9e12aedd04df5f4ca6c2b6c8d0ec HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:50:19] "GET /acs/v1.0/service_online_status?targetId=854d9e12aedd04df5f4ca6c2b6c8d0ec HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:50:19] "GET /acs/v1.0/service_online_status?targetId=854d9e12aedd04df5f4ca6c2b6c8d0ec HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:51:32] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:51:32] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.72 - - [09/Oct/2018 17:51:32] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:12:09] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:12:09] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:12:29] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:12:37] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:12:37] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:12:40] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:12:42] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:12:46] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:12:52] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:17:19] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:17:19] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:25:25] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:40:29] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 09:40:31] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 10:42:24] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 10:42:26] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 11:33:45] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 11:36:49] "GET /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 11:47:41] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 11:50:37] "GET /acs/v1.0/service_online_status?targetId=e9624e57ab2594bc90d42bd79f067066 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 11:50:50] "GET /acs/v1.0/service_online_status?targetId=e6b11a0431bb6c2cfb8c051dfc174bef HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:13:25] "DELETE /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:14:22] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:14:22] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:14:25] "DELETE /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:15:31] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:15:31] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:15:38] "DELETE /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:16:14] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:16:15] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:16:16] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:16:16] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:16:19] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:16:19] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:16:24] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 14:16:24] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 16:58:22] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 16:58:22] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 16:58:22] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 16:59:13] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 16:59:13] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 16:59:13] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 17:24:02] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [10/Oct/2018 17:24:29] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 11:27:17] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 11:27:19] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 11:27:37] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 11:27:39] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 11:28:13] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 11:28:15] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 11:44:07] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 11:44:42] "GET /acs/v1.0/service_online_status?targetId=8620d17f163aaec134915a44862c96d9 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 11:47:49] "GET /acs/v1.0/service_online_status?targetId=a353fea2b0f18c2eae1953f972254e70 HTTP/1.1" 200 -
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.29147677280154816', 'rc-timestamp': '1539230322000', 'rc-signature': '7aa44c418c28cd9f22401286f8a79bb40e56a952', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userId1'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.115665s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.35539947094154234', 'rc-timestamp': '1539230322000', 'rc-signature': '10d1d4729285a811bf5b8d0d479ff17198b4ef38', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'f899139df5e1059396431415e770c6dd', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 195
+DEBUG base.py:62 Response[200]: OK, Duration: 0.97737s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.48742532935424177', 'rc-timestamp': '1539230337000', 'rc-signature': '18534609fb83d799aaeb3e85f249ec324317166e', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.102725s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.11259056989108762', 'rc-timestamp': '1539230337000', 'rc-signature': '3c411b0c3eff3eddff2324168829dc641384cd6b', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'f899139df5e1059396431415e770c6dd', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.93753s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.3207750633470171', 'rc-timestamp': '1539230350000', 'rc-signature': '79948f23bb88122f06005bc378ece41f8de20be9', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.102734s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.3112003201426031', 'rc-timestamp': '1539230351000', 'rc-signature': '997a2c557f8ad2107f39e69694ed0d1eeaa09298', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'f899139df5e1059396431415e770c6dd', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.95763s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.8036410234876503', 'rc-timestamp': '1539230363000', 'rc-signature': '66dc577a1b8bdb17e9a6a1cc6e803cff93785510', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.113695s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.876668300518069', 'rc-timestamp': '1539230373000', 'rc-signature': '90d93c5d523123a9df126164fabf4e7e8c7af5fc', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.101758s.
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 11:59:36] "GET /acs/v1.0/service_online_status?targetId=a353fea2b0f18c2eae1953f972254e70 HTTP/1.1" 200 -
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.8030070570371903', 'rc-timestamp': '1539230415000', 'rc-signature': '2412aca646d52c9621b5028c3ce09da97a78bde3', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.107710s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.2376411181719641', 'rc-timestamp': '1539230415000', 'rc-signature': '66fd3913993450509440d2c23c83ee42616b6ef8', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'f899139df5e1059396431415e770c6dd', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.111705s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.4540000950877474', 'rc-timestamp': '1539230429000', 'rc-signature': '95825f4efc9acb835daaa5465b707aec0a0a4a3a', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.113699s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.06142140310847233', 'rc-timestamp': '1539230429000', 'rc-signature': 'e587319375d42a75a64f7f47ba026bfcc05b065f', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'f899139df5e1059396431415e770c6dd', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.88756s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 195
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.2429306542430717', 'rc-timestamp': '1539230484000', 'rc-signature': 'e11c5b8b217d44a99772afb12d573d6f2d97588e', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.102729s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.7959397946991214', 'rc-timestamp': '1539230484000', 'rc-signature': '0958dc84e5aeef1ef56f71e73bd65157ad20326b', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'f899139df5e1059396431415e770c6dd', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.90786s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.291432579765172', 'rc-timestamp': '1539230510000', 'rc-signature': '018017ff65610c42d3e5de518c81b6dda7dee92c', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.106748s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.4256139053383232', 'rc-timestamp': '1539230510000', 'rc-signature': 'b7556662c4cc0dd140615611727d9b1f92f15dd7', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'f899139df5e1059396431415e770c6dd', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.85739s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.22004224746437817', 'rc-timestamp': '1539235657000', 'rc-signature': 'dc999088ab70666678bba3ea35e3d180391aa14a', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.108743s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.13075639638735348', 'rc-timestamp': '1539235657000', 'rc-signature': '8ab88cb0dc2f6fb62ee91dc3ab4183fcf5fbee08', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'f899139df5e1059396431415e770c6dd', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 195
+DEBUG base.py:62 Response[200]: OK, Duration: 0.83774s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.39002710214136205', 'rc-timestamp': '1539235670000', 'rc-signature': '452b41bda5449dc5d4b339fbd17ad2186f5785ca', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.100732s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.9838180423428436', 'rc-timestamp': '1539235670000', 'rc-signature': '042f803f0c089ed2cbc565660856f55d6bd247c5', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'f899139df5e1059396431415e770c6dd', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.85774s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 15:16:13] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 15:16:19] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 15:16:19] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:25:29] "POST /acs/v1.0/change_service_state HTTP/1.1" 200 -
+ERROR app.py:1761 Exception on /acs/v1.0/service_online_status [GET]
+Traceback (most recent call last):
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\company\ACS\acs\utils\commons.py", line 21, in wrapper
+    return view_func(*args, **kwargs)
+  File "D:\company\ACS\acs\apis\service.py", line 225, in get
+    logs.pop()
+IndexError: pop from empty list
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:28:51] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 500 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:12] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:17] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:26] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:26] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:26] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:31] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:38] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:40] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:41] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:41] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=6&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:42] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=7&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:42] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=8&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:35:46] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:36:59] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:36:59] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.74 - - [11/Oct/2018 16:36:59] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [11/Oct/2018 16:46:16] "GET /acs/v1.0/service_online_status?targetId=8d5e7e48b87585422f4696e2e8aa6e7b HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.148 - - [11/Oct/2018 16:46:26] "GET /acs/v1.0/service_online_status?targetId=111111 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [11/Oct/2018 16:47:29] "GET /acs/v1.0/service_online_status?targetId=111111 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [11/Oct/2018 16:48:24] "GET /acs/v1.0/service_online_status?targetId=111111 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.148 - - [11/Oct/2018 16:49:20] "GET /acs/v1.0/service_online_status?targetId=111111 HTTP/1.1" 200 -
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.5024920258794365', 'rc-timestamp': '1539339575000', 'rc-signature': '3e1542e83d3b1ef46dcebb901618a132ace9d7f3', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.118427s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.6984049415637743', 'rc-timestamp': '1539339575000', 'rc-signature': '441d944d2ce657e3d0dac697d850b4e91670a4f8', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'eccbc87e4b5ce2fe28308fd9f2a7baf3', 'name': 'roy123', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.96745s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 195
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.10368340098676554', 'rc-timestamp': '1539393503000', 'rc-signature': 'd48730c237bdc36fdf6c3a5ec149bc24c4af6087', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.107713s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.41053195963741584', 'rc-timestamp': '1539393504000', 'rc-signature': '90fea53db3b75143eb49514b9dff6ef5fc67aecc', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'a87ff679a2f3e71d9181a67b7542122c', 'name': 'Alex', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.91757s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 195
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.077719523415956', 'rc-timestamp': '1539397804000', 'rc-signature': '71f46cff6d3b05eb77c9b3246d22a256892c768c', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.96744s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.014313963948211272', 'rc-timestamp': '1539397804000', 'rc-signature': '9d15535257973588689000ab2cfd0023f4c59a93', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'a87ff679a2f3e71d9181a67b7542122c', 'name': 'Alex', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:62 Response[200]: OK, Duration: 0.111737s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 195
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:38:55] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:38:58] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:38:59] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:39:06] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:39:14] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:41:18] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:41:18] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:41:20] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:41:22] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:41:27] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:41:27] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:41:27] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:44:28] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:44:28] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:44:28] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:48:45] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:48:45] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 10:48:45] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:24] "GET /acs/v1.0/record_dialogs?role=1&start_date=2018-10-16+00:00:00&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:29] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:31] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:31] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:31] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:31] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:33] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:34] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:35] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=7&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:36] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=9&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:37] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=10&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:39] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=6&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:41] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:42] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:44] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:47] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:48] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:48] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:50] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=6&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:50] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=8&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:51] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=10&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:51] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=10&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:53] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=8&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:55] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=7&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:57] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:58] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:12:59] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:01] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:02] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:02] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:03] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:04] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=7&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:05] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=9&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:05] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=10&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:07] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=6&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:09] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:10] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:15] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:16] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=6&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:18] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:19] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:21] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:21] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=7&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:33] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:35] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:36] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:39] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:50] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:52] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:53] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:55] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:13:56] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:40] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:40] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:40] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:40] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:40] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:40] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:40] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:45] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:47] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:47] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:49] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:49] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:50] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:51] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:52] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:53] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:53] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:54] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:55] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:55] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:56] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:18:57] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:23] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:23] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:23] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:40] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:40] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:40] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:44] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:45] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:46] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:47] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:48] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:48] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:48] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:49] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:50] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:50] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:19:51] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:20:42] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:20:42] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:20:42] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:20:42] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:21:03] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:21:07] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:21:12] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:21:17] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:21:36] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:21:49] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:21:49] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:21:49] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:21:49] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:22:22] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:22:25] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:22:32] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:24:50] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:24:51] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:24:51] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:24:51] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:24:54] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:24:55] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:25:05] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:25:05] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:25:05] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:25:23] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:25:39] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:13] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:13] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:13] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:17] "GET /acs/v1.0/robot_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:17] "GET /acs/v1.0/service_number HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:17] "GET /acs/v1.0/record_dialogs HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:23] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:26] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:31] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:34] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:36] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=1&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:37] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:38] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:40] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:43] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:46] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=5&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:49] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=3&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:51] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=4&robot_code= HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [13/Oct/2018 11:26:54] "GET /acs/v1.0/record_dialogs?role=&start_date=&end_date=&p=2&robot_code= HTTP/1.1" 200 -
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.6292222196872976', 'rc-timestamp': '1539402821000', 'rc-signature': 'f372bd3cc536a8d310c20f4ed4ee8253ae6c88b7', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.100761s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': '82hegw5u8ytdx', 'rc-nonce': '0.9374712403098547', 'rc-timestamp': '1539402821000', 'rc-signature': '32e11d3511c0cb6ae0b9f41b1ec700157ed47b6a', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'c4ca4238a0b923820dcc509a6f75849bqbkj', 'name': 'Alex', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 211
+DEBUG base.py:62 Response[200]: OK, Duration: 0.87800s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.400017263416406', 'rc-timestamp': '1539402845000', 'rc-signature': 'a3a105fd1ae8850c1ce0658c7089b652a727d4b3', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.96742s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': '82hegw5u8ytdx', 'rc-nonce': '0.4866972351150174', 'rc-timestamp': '1539402845000', 'rc-signature': 'c467116f76f9f14647def5672ff5c953890757c8', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'c4ca4238a0b923820dcc509a6f75849bqbkj', 'name': 'Alex', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 211
+DEBUG base.py:62 Response[200]: OK, Duration: 0.92758s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 195
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.9838520531269319', 'rc-timestamp': '1539407002000', 'rc-signature': 'bcfc1cae9d948dc8aa7df611cf8f9fd613b62b94', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.109707s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': '82hegw5u8ytdx', 'rc-nonce': '0.5580297764722543', 'rc-timestamp': '1539407002000', 'rc-signature': '97341ec8ec8f59554332148ef1443d2106d47373', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'eccbc87e4b5ce2fe28308fd9f2a7baf3qbkj', 'name': 'Alex', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 211
+DEBUG base.py:62 Response[200]: OK, Duration: 0.84774s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.7440741635212266', 'rc-timestamp': '1539407149000', 'rc-signature': '5b8845141cb47952a45291424d5995b1a1608281', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.109708s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': '82hegw5u8ytdx', 'rc-nonce': '0.32392328050653985', 'rc-timestamp': '1539407149000', 'rc-signature': '37666e871ccf3cdeb11e821702cd1577b546a373', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'a87ff679a2f3e71d9181a67b7542122cqbkj', 'name': 'Alex', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 211
+DEBUG base.py:62 Response[200]: OK, Duration: 0.95745s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.971179537852705', 'rc-timestamp': '1539407162000', 'rc-signature': 'd338b294e5e2a48c702c28ed3db9b987bcb662bd', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.98737s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': '82hegw5u8ytdx', 'rc-nonce': '0.16828510493029925', 'rc-timestamp': '1539407162000', 'rc-signature': 'e46f18c1a99d77dd518ec7a826deb3bf5b602c65', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'a87ff679a2f3e71d9181a67b7542122cqbkj', 'name': 'Roy', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 211
+DEBUG base.py:62 Response[200]: OK, Duration: 0.86771s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 195
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.6223730499386213', 'rc-timestamp': '1539407205000', 'rc-signature': '56874db2020f8fe86e0ad13b786e51eb7d5bf709', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.104719s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': '82hegw5u8ytdx', 'rc-nonce': '0.29054839125338616', 'rc-timestamp': '1539407205000', 'rc-signature': 'a89824177768eb5f76dce6df9da6d79639fd01de', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'eccbc87e4b5ce2fe28308fd9f2a7baf3qbkj', 'name': 'Sarah', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 211
+DEBUG base.py:62 Response[200]: OK, Duration: 0.86768s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 195
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/checkOnline.json
+DEBUG base.py:55 Header: {'rc-app-key': 'z3v5yqkbz1h60', 'rc-nonce': '0.6729982068766316', 'rc-timestamp': '1539407260000', 'rc-signature': '08f0eb80b57c90d39a80714c553ecc235b129228', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'userid3'}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/checkOnline.json HTTP/1.1" 200 25
+DEBUG base.py:62 Response[200]: OK, Duration: 0.101760s.
+DEBUG base.py:52 Request[POST]: http://api.cn.ronghub.com/user/getToken.json
+DEBUG base.py:55 Header: {'rc-app-key': '82hegw5u8ytdx', 'rc-nonce': '0.7556259513786062', 'rc-timestamp': '1539407260000', 'rc-signature': 'f4d235ef72b5a9a64fadb8ad8fb618b38f2c7ae2', 'content-type': 'application/x-www-form-urlencoded'}
+DEBUG base.py:56 Params: {'userId': 'c81e728d9d4c2f636f067f89cc14862cqbkj', 'name': 'Harry', 'portraitUri': ''}
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 211
+DEBUG base.py:62 Response[200]: OK, Duration: 0.90727s.
+DEBUG connectionpool.py:205 Starting new HTTP connection (1): api.cn.ronghub.com:80
+DEBUG connectionpool.py:393 http://api.cn.ronghub.com:80 "POST /user/getToken.json HTTP/1.1" 200 207
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:21:00] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:21:00] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:30:06] "POST /acs/v1.0/service_login HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:30:06] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:30:08] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:30:10] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+ERROR app.py:1761 Exception on /acs/v1.0/service_online_status [GET]
+Traceback (most recent call last):
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask\views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "D:\virtualenv\flask_acs\lib\site-packages\flask_restful\__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "D:\company\ACS\acs\utils\commons.py", line 21, in wrapper
+    return view_func(*args, **kwargs)
+  File "D:\company\ACS\acs\apis\service.py", line 226, in get
+    logs.pop()
+IndexError: pop from empty list
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:32:52] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:54:35] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:54:36] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:54:37] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:54:39] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:58:45] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:58:47] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:58:47] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:58:49] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:59:49] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:59:51] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:59:51] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 10:59:53] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:06:12] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:06:14] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:06:16] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:06:29] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:08:05] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:08:07] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:08:07] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:08:09] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:09:40] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:09:42] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:09:42] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:10:11] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:10:32] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:10:34] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:10:35] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:12:49] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:13:08] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:13:09] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:13:10] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:13:35] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:13:42] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:13:44] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:13:44] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:13:49] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:18:42] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:18:44] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:18:44] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:18:46] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:26:37] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:26:39] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:26:39] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:26:41] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:33:11] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:33:12] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:33:13] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:33:15] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:33:36] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:33:37] "GET /acs/v1.0/service_message HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:33:38] "GET /acs/v1.0/service_online_status?targetId=f9e55fcd9362a313935b51d16ad17ff8 HTTP/1.1" 200 -
+INFO _internal.py:88 172.16.3.119 - - [15/Oct/2018 11:33:40] "GET /acs/v1.0/service_message HTTP/1.1" 200 -

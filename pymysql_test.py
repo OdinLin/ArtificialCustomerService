@@ -16,3 +16,24 @@ with connection.cursor() as cursor:
     cursor.execute('update customer_service set state = "%s" where id = 1' % ('不在线'))
     print(results)
     connection.commit()
+
+import uuid
+print(uuid.uuid4())
+
+# 592b71f0-b3f8-4f64-bd45-40b35c0191af
+
+
+
+
+
+import time, datetime
+millis = int(round(time.time() * 1000))
+print(millis)
+r = datetime.datetime.now()
+online_seconds = int(time.mktime(r.timetuple()) * 1000)
+print(online_seconds)
+
+
+a = [1]
+b = a[-1]
+print(b)

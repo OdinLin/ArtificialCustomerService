@@ -36,6 +36,7 @@ class GetUseInfo(Resource):
         user_id = g.user_id
         try:
             user = CustomerService.query.filter_by(id=user_id, is_delete=0).first()
+            redis_store.set('repeat_login' + user.service_id, 1)
         except Exception as e:
             current_app.logger.error(e)
             result = {
@@ -164,6 +165,14 @@ class ServiceLogin(Resource):
 
         # 如果相同，登录成功，保存登录状态
         # 用session保存登录状态
+        if redis_store.get('repeat_login'+user.service_id):
+            result = {
+                "status": "200",
+                "msg": "重复登录",
+                "data": '您的账号已在其他地方登录,请勿重复登录!'
+            }
+            return result
+        redis_store.set('repeat_login'+user.service_id, 1)
         session["user_id"] = user.id
         session["mobile"] = mobile
         session["user_name"] = user.s_name
@@ -182,6 +191,7 @@ class ServiceLogin(Resource):
         service = CustomerService.query.filter_by(id=user_id, is_delete=0).first()
         service.state = "不在线"
         service.save()
+        redis_store.delete('repeat_login' + service.service_id)
         redis_robot_service = 'service' + str(service.robot_user_id)
         redis_robot_line = 'line' + str(service.robot_user_id)
         # redis_store.hincrby(redis_robot_service, service_id, amount=1)

@@ -96,4 +96,12 @@ if not redis_store.get('hhhhhhh'):
 # print(qq)
 
 
+redis_store.setex('12345', 60 * 2, 1)
+
+refresh_flag = redis_store.get('12345').decode()
+print(refresh_flag)
+if refresh_flag == '1':
+    print(refresh_flag)
+
+
 

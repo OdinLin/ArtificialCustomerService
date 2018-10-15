@@ -63,7 +63,7 @@ class RecordDialogs(Resource):
             st_end_date = datetime.datetime.strptime(end_date, "%Y-%m-%d %H:%M:%S")
             filter_params.append(AimiChatLogs.create_time<=st_end_date)
         try:
-            query = AimiChatLogs.query.filter(*filter_params).order_by(AimiChatLogs.update_time.desc(),AimiChatLogs.role)
+            query = AimiChatLogs.query.filter(*filter_params).order_by(AimiChatLogs.id.desc(),AimiChatLogs.role)
             total_num = AimiChatLogs.query.filter(*filter_params).count()
             if query:
                 page_obj = query.paginate(page,per_page=10,error_out=False)
@@ -115,7 +115,7 @@ class RecordExcel(Resource):
             st_end_date = datetime.datetime.strptime(end_date, "%Y-%m-%d %H:%M:%S")
             filter_params.append(AimiChatLogs.create_time <= st_end_date)
         try:
-            logs = AimiChatLogs.query.filter(*filter_params).order_by(AimiChatLogs.update_time.desc(),
+            logs = AimiChatLogs.query.filter(*filter_params).order_by(AimiChatLogs.id.desc(),
                                                                       AimiChatLogs.role).all()
         except Exception as e:
             current_app.logger.error(e)

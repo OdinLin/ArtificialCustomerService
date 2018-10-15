@@ -19,7 +19,7 @@ print(password('12345678'))
 
 import hashlib
 
-print(hashlib.md5('1'.encode('utf-8')).hexdigest())
+print(hashlib.md5('4'.encode('utf-8')).hexdigest())
 
 # print(type({'hello':'world'}))
 # if isinstance({'hello':'world'}, dict):

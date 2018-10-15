@@ -4,13 +4,18 @@ __date__ = '2018/8/21 14:56'
 from acs.rongcloud import RongCloud
 
 
-
-
-
 app_key = 'z3v5yqkbz1h60'
 app_secret = 'QASsvdjF7j'
 rcloud = RongCloud(app_key, app_secret)
-r = rcloud.User.getToken(userId='userid4', name='11111111', portraitUri='')
+s = rcloud.User.checkOnline(userId='userid3')
+# 在线状态，1为在线，0为不在线。
+# print(s.result['status'])
+
+
+app_key = '82hegw5u8ytdx'
+app_secret = 'Zmc9oahKBk9oQY'
+rcloud = RongCloud(app_key, app_secret)
+r = rcloud.User.getToken(userId='c81e728d9d4c2f636f067f89cc14862cqbkj', name='Harry', portraitUri='')
 print(r.result['token'])
 
 
@@ -45,5 +50,9 @@ def sendToIM(url, data):
 
 if __name__ == '__main__':
     a = sendToIM('http://api.cn.ronghub.com/user/getToken.json', {'userId':'c81e728d9d4c2f636f067f89cc14862c','name':'小不点'})
-    print(a['token'])
+    #print(a['token'])
+
+
+    # RoBW0UiEH9D6ptJTiZ2odVRNJCcB1D9904%2F%2BRbBj12WQOoeQDu%2FbuTzLZXP2Tp%2BcZEUuGMXLXJ%2FCmo8b21xX4jAw4o7vMcrKGXhhy2pY%2FL0vOHTVpZB5fI0icdrrrkI1
+    # RoBW0UiEH9D6ptJTiZ2odVRNJCcB1D9904/+RbBj12WQOoeQDu/buTzLZXP2Tp+cZEUuGMXLXJ/Cmo8b21xX4jAw4o7vMcrKGXhhy2pY/L0vOHTVpZB5fI0icdrrrkI1
 

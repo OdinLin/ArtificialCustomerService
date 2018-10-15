@@ -30,6 +30,22 @@ class CustomerLogin(Resource):
 
         # 判断是否能接入客户 客服状态('在线,不在线')---机器人对应客服  客服接待数量
         service = CustomerService.query.filter_by(robot_user_id=robot_user_id, state='在线',is_delete=0).all()
+        service_customer_id = None
+        service_state_id = redis_store.get(uuid + 'customer_refresh')
+        if service_state_id:
+            customer_refresh = service_state_id.decode()
+            service_state = CustomerService.query.filter_by(service_id=customer_refresh).first().state
+            if service_state == '不在线':
+                app_key = 'z3v5yqkbz1h60'
+                app_secret = 'QASsvdjF7j'
+                rcloud = RongCloud(app_key, app_secret)
+                s = rcloud.User.checkOnline(userId=customer_refresh)
+                # 在线状态，1为在线，0为不在线。
+                if s.result['status'] == '1':
+                    service_customer_id = customer_refresh
+                    service = CustomerService.query.filter_by(robot_user_id=robot_user_id, is_delete=0).all()
+
+
 
         if not service:
             try:
@@ -121,6 +137,9 @@ class CustomerLogin(Resource):
                     service_mix_id = customer_service
             except:
                 service_mix_id = li[num.index(min(num))]
+
+        if service_customer_id:
+            service_mix_id = service_customer_id
 
         # 根据客户唯一id生成唯一客户token
         data = {}
@@ -222,6 +241,7 @@ class ConnectSuccess(Resource):
         redis_store.hincrby(redis_robot_service, service_id, amount=1)  # 机器人-客服id-客服接待人数
         redis_store.setex(uuid, 60*30, service_id)   # 客户--客服
         redis_store.set(redis_status, service_id)
+        redis_store.set(uuid + 'customer_refresh', service_id)
         result = {
             "status": "200",
             "msg": "客服接待客户数增加成功",

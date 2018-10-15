@@ -159,3 +159,4 @@ class DataPlan(Addmodel, db.Model, BaseModel):
     year_balance = db.Column(db.Integer)                # 年度流量余额
     year_expiration_time = db.Column(db.String(32))       # 年度过期时间
     user_id = db.Column(db.Integer, nullable=False)
+    month_fixation_update = db.Column(db.Integer, nullable=False, default=1000, comment='月度免费流量固定更新条数')

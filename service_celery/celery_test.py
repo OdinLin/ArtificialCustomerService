@@ -1,3 +1,7 @@
+# -*- coding:utf-8 -*-
+__author__ = 'Roy'
+__date__ = '2018/10/9 11:57'
+
 # coding:utf-8
 from acs.rongcloud import RongCloud
 from acs.ext import redis_store
@@ -19,13 +23,13 @@ celery_app = Celery("tasks", broker=broker_url)
 
 @celery_app.task
 def rong_send_message(userid, service_id):
-    time.sleep(1)
-    refresh_flag = redis_store.get(userid + 'refresh')
-    if refresh_flag:
-        refresh_flag = refresh_flag.decode()
-    if refresh_flag == '1':
-        redis_store.delete(userid + 'refresh')
+    time.sleep(5)
+    start_time = redis_store.get(userid + '0' + 'customer')
+    end_time = redis_store.get(userid + '1' + 'customer')
+    if not all([start_time, end_time]):
         return 'not send'
+    if start_time > end_time:
+        return 'refresh not send'
     app_key = 'z3v5yqkbz1h60'
     app_secret = 'QASsvdjF7j'
     rcloud = RongCloud(app_key, app_secret)
@@ -36,14 +40,15 @@ def rong_send_message(userid, service_id):
         content=json.dumps({"content": "592b71f0-b3f8-4f64-bd45-40b35c0191af", "extra": "helloExtra"}),
         isPersisted='1',
         isCounted='1', )
-    redis_store.delete(userid + 'customer_refresh')
+    redis_store.delete(userid + '0' + 'customer')
+    redis_store.delete(userid + '1' + 'customer')
     return 'send_success'
 
 
 
 @celery_app.task
 def service_change_state(service_id):
-    time.sleep(2)
+    time.sleep(5)
     start_time = redis_store.get(service_id + '0' + 'service')
     end_time = redis_store.get(service_id + '1' + 'service')
     if not all([start_time, end_time]):
@@ -67,7 +72,6 @@ def service_change_state(service_id):
             redis_store.delete(service_id + '0' + 'service')
             redis_store.delete(service_id + '1' + 'service')
             connection.commit()
-            # redis_store.delete('repeat_login' + service_id)
     except:
         pass
     return 'send_success'
